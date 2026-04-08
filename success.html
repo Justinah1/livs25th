@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Confirmed - #LivsLavish25th</title>
+    <meta name="description" content="Your RSVP has been successfully submitted!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        
+        .pattern-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.15) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        @keyframes celebrateFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .celebrate {
+            animation: celebrateFloat 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-body bg-teal-50 text-gray-800 pattern-bg">
+    <!-- Navigation -->
+    <nav class="bg-teal-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-display text-2xl font-bold tracking-wide hover:text-yellow-400 transition">#LivsLavish25th</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Section -->
+    <section class="py-32 px-4">
+        <div class="container mx-auto max-w-2xl text-center">
+            <!-- Animated Icon -->
+            <div class="mb-8">
+                <i class="fas fa-check-circle text-yellow-500 text-8xl celebrate"></i>
+            </div>
+
+            <!-- Main Message -->
+            <h1 class="font-display text-5xl md:text-6xl font-bold text-teal-800 mb-4">Thank You!</h1>
+            <p class="text-2xl text-teal-600 font-semibold mb-6">Your RSVP has been received</p>
+
+            <!-- Details -->
+            <div class="bg-gradient-to-br from-white to-yellow-50 rounded-xl p-8 shadow-lg border border-yellow-200 mb-8">
+                <p class="text-gray-700 mb-4">We're excited to celebrate with you at Olivia's Lavish 25th Birthday!</p>
+                <div class="space-y-3 text-left mb-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-teal-600 mr-3 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-gray-800">Confirmation Email</p>
+                            <p class="text-sm text-gray-600">A confirmation email has been sent to the email address you provided</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-calendar text-teal-600 mr-3 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-gray-800">Important Dates</p>
+                            <p class="text-sm text-gray-600">Asoebi payment due: April 20th | RSVP closes: April 25th</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-teal-600 mr-3 mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-gray-800">Next Steps</p>
+                            <p class="text-sm text-gray-600">We'll contact you with payment details and shipping instructions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-gradient-to-r from-teal-600 to-yellow-500 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-700 hover:to-yellow-600 transition duration-300 transform hover:scale-[1.02] shadow-lg">
+                    <i class="fas fa-home mr-2"></i>Back to Home
+                </a>
+                <a href="index.html#rsvp" class="bg-white text-teal-600 font-semibold py-3 px-8 rounded-lg border-2 border-teal-600 hover:bg-teal-50 transition duration-300">
+                    <i class="fas fa-info-circle mr-2"></i>Learn More
+                </a>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="mt-12 text-gray-600">
+                <p class="text-sm mb-4">Have questions? Contact Olivia:</p>
+                <div class="space-y-2 text-sm">
+                    <p><i class="fas fa-phone text-teal-600 mr-2"></i>+1 929 271 3460</p>
+                    <p><i class="fas fa-map-marker-alt text-teal-600 mr-2"></i>Fort Worth, TX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-teal-100 py-8 px-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2026 #LivsLavish25th. All rights reserved.</p>
+            <p class="text-xs mt-2">Celebrating 25 years of life, love, and luxury</p>
+        </div>
+    </footer>
+</body>
+</html>
