@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#LivsLavish25th Birthday Celebration</title>
+    <meta name="description" content="Join us for an unforgettable Owambe celebration - #LivsLavish25th">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: {
+                            50: "#f0fdfa",
+                            100: "#ccfbf1",
+                            200: "#99f6e4",
+                            300: "#5eead4",
+                            400: "#2dd4bf",
+                            500: "#14b8a6",
+                            600: "#0d9488",
+                            700: "#0f766e",
+                            800: "#115e59",
+                            900: "#134e4a"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        
+        .gold-accent {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pattern-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.15) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="font-body bg-teal-50 text-gray-800 pattern-bg">
+    <!-- Navigation -->
+    <nav class="bg-teal-800 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-display text-2xl font-bold tracking-wide">#LivsLavish25th</div>
+                <ul id="nav-items" class="hidden md:flex space-x-8"></ul>
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <ul id="mobile-nav-items" class="hidden md:hidden mt-4 space-y-2 pb-4"></ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-b from-teal-800 to-teal-600 text-white py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-4">Olivia's Lavish</h1>
+            <p class="text-2xl md:text-3xl mb-2 text-teal-100">25th Birthday Celebration</p>
+            <div class="w-24 h-1 bg-yellow-400 mx-auto my-6"></div>
+            <p class="text-lg md:text-xl text-teal-100 max-w-2xl mx-auto">An unforgettable Owambe experience celebrating life, culture, and luxury</p>
+        </div>
+    </header>
+
+    <!-- Event Details -->
+    <section id="details" class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="font-display text-4xl font-bold text-center text-teal-800 mb-12">Event Details</h2>
+            <div id="event-details-grid" class="grid md:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Asoebi Section -->
+    <section id="asoebi" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="font-display text-4xl font-bold text-center text-teal-800 mb-4">Owambe Asoebi & Gele</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Join the celebration in style! Asoebi and Gele available for $40</p>
+            
+            <div class="bg-teal-50 border-l-4 border-teal-600 p-6 mb-12 rounded-r-lg">
+                <h3 class="font-display text-2xl font-semibold text-teal-800 mb-3">Important Aso-ebi Information</h3>
+                <p class="text-gray-700 mb-2"><strong>Pickup Location:</strong> 64 Santos Avenue, Abule Egba, Lagos</p>
+                <p class="text-gray-700 mb-2"><strong>Contact:</strong> Olabisi - +234 706 207 1205</p>
+                <p class="text-gray-700">Start getting your tailors ready! Asoebi will be provided in Lagos.</p>
+            </div>
+
+            <div id="asoebi-grid" class="grid md:grid-cols-3 gap-8 mb-12"></div>
+        </div>
+    </section>
+
+    <!-- Shipping Information -->
+    <section id="shipping" class="py-16 px-4 bg-teal-800 text-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="font-display text-4xl font-bold text-center mb-12">US Shipping Option</h2>
+            
+            <div class="bg-teal-700 rounded-lg p-8 mb-8">
+                <div class="flex items-start mb-6">
+                    <div class="bg-yellow-400 text-teal-900 rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">$</div>
+                    <div>
+                        <h3 class="font-display text-2xl font-semibold mb-2">Group Shipping Available</h3>
+                        <p class="text-teal-100">Additional fee of <strong class="text-white">$50</strong> for shipping to the US</p>
+                    </div>
+                </div>
+
+                <div id="shipping-timeline" class="space-y-6 mb-8"></div>
+
+                <div class="bg-teal-600 rounded-lg p-6 border border-teal-500">
+                    <h4 class="font-semibold text-lg mb-2"><i class="fas fa-info-circle mr-2"></i>Delivery Details</h4>
+                    <p class="text-teal-100 text-sm">Once items arrive in the US, they will be distributed to various addresses at no additional cost. You will receive tracking information once the shipment departs Lagos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Form -->
+    <section id="rsvp" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="font-display text-4xl font-bold text-center text-teal-800 mb-4">RSVP & Shipping Preferences</h2>
+            <p class="text-center text-gray-600 mb-8">Let us know your plans and preferences for the celebration</p>
+            
+            <form id="rsvp-form" class="bg-teal-50 rounded-xl p-8 shadow-lg" netlify>
+                <div class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="+1 (555) 000-0000">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Asoebi Category</label>
+                        <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition bg-white">
+                            <option value="">Select your category</option>
+                            <option value="ladies">Asoebi Ladies</option>
+                            <option value="men">Asoebi Men</option>
+                            <option value="guests">Other Guests</option>
+                        </select>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg border border-teal-200">
+                        <label class="block text-sm font-medium text-gray-700 mb-4">Group Shipping to US?</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="shipping" value="yes" class="w-4 h-4 text-teal-600 border-gray-300 focus:ring-teal-500">
+                                <span class="ml-3 text-gray-700">Yes, I want the $50 group shipping option (Deliver to Olabisi by May 31st)</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="shipping" value="no" class="w-4 h-4 text-teal-600 border-gray-300 focus:ring-teal-500">
+                                <span class="ml-3 text-gray-700">No, I will arrange my own pickup/shipping</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="size-field" class="hidden">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Size / Measurements</label>
+                        <textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" rows="3" placeholder="Please provide your size or measurements"></textarea>
+                    </div>
+
+                    <div id="address-field" class="hidden">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">US Shipping Address</label>
+                        <textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" rows="3" placeholder="Enter your complete US address"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-teal-600 text-white font-semibold py-4 rounded-lg hover:bg-teal-700 transition duration-300 transform hover:scale-[1.02]">
+                        Submit RSVP
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="font-display text-4xl font-bold text-center text-teal-800 mb-4">Payment Options</h2>
+            <p class="text-center text-gray-600 mb-12">Secure payment methods for your Asoebi and shipping fees</p>
+            
+            <div id="payment-methods" class="grid md:grid-cols-2 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-teal-100 py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4">#LivsLavish25th</h3>
+                    <p class="text-sm leading-relaxed">Celebrating 25 years of life, love, and luxury. Join us for an unforgettable Owambe experience.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact Information</h4>
+                    <ul id="footer-contact" class="space-y-2 text-sm"></ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul id="footer-links" class="space-y-2 text-sm"></ul>
+                </div>
+            </div>
+            <div class="border-t border-teal-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 #LivsLavish25th. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data Layer
+        const navigationData = [
+            { "label": "Details", "href": "#details" },
+            { "label": "Asoebi", "href": "#asoebi" },
+            { "label": "Shipping", "href": "#shipping" },
+            { "label": "RSVP", "href": "#rsvp" },
+            { "label": "Payment", "href": "#payment" }
+        ];
+
+        const eventDetailsData = [
+            {
+                "icon": "fas fa-calendar-alt",
+                "title": "Date",
+                "content": "July 31st, 2026",
+                "subtext": "Friday"
+            },
+            {
+                "icon": "fas fa-clock",
+                "title": "Time",
+                "content": "5pm - 11pm",
+                "subtext": "Evening celebration"
+            },
+            {
+                "icon": "fas fa-map-marker-alt",
+                "title": "Location",
+                "content": "DSG Designs Event Center",
+                "subtext": "3701 S Cooper St #200, Arlington, TX 76015"
+            }
+        ];
+
+        const asoebiData = [
+            {
+                "category": "Asoebi Ladies",
+                "description": "Elegant traditional wear for the ladies",
+                "image": "https://picsum.photos/400/500?random=1",
+                "alt": "Traditional Nigerian attire for women"
+            },
+            {
+                "category": "Asoebi Men",
+                "description": "Classic traditional wear for the men",
+                "image": "https://picsum.photos/400/500?random=2",
+                "alt": "Traditional Nigerian attire for men"
+            },
+            {
+                "category": "Other Guests",
+                "description": "Beautiful options for all other attendees",
+                "image": "https://picsum.photos/400/500?random=3",
+                "alt": "Guest attire options"
+            }
+        ];
+
+        const shippingTimelineData = [
+            {
+                "step": "1",
+                "title": "Purchase Asoebi",
+                "description": "Pay $40 for your selected asoebi category"
+            },
+            {
+                "step": "2",
+                "title": "Sew & Deliver to Lagos",
+                "description": "Complete sewing and deliver to Olabisi at 64 Santos Avenue, Abule Egba by May 31st"
+            },
+            {
+                "step": "3",
+                "title": "Group Shipping to US",
+                "description": "Pay $50 shipping fee. Items will be shipped to the US in bulk"
+            },
+            {
+                "step": "4",
+                "title": "US Distribution",
+                "description": "Items arrive and are sent to your US address at no additional cost"
+            }
+        ];
+
+        const paymentMethodsData = [
+            {
+                "name": "CashApp",
+                "icon": "fas fa-dollar-sign",
+                "description": "Quick and easy payment",
+                "handle": "$Blackisholivia",
+                "color": "bg-green-500"
+            },
+            {
+                "name": "Apple Pay",
+                "icon": "fab fa-apple",
+                "description": "Secure Apple device payment",
+                "handle": "9292713460",
+                "color": "bg-gray-800"
+            }
+        ];
+
+        const footerContactData = [
+            { "icon": "fas fa-user", "text": "Olivia" },
+            { "icon": "fas fa-phone", "text": "+1 929 271 3460" },
+            { "icon": "fas fa-map-marker-alt", "text": "Forth Worth, TX" }
+        ];
+
+        // Render Functions
+        function renderNavItems(items) {
+            return items.map(item => 
+                "<li><a href=\"" + item.href + "\" class=\"hover:text-yellow-400 transition duration-300\">" + item.label + "</a></li>"
+            ).join("");
+        }
+
+        function renderEventDetails(items) {
+            return items.map(item => 
+                "<div class=\"bg-white rounded-xl p-8 shadow-lg text-center transform hover:scale-105 transition duration-300\">" +
+                    "<div class=\"w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4\">" +
+                        "<i class=\"" + item.icon + " text-2xl text-teal-600\"></i>" +
+                    "</div>" +
+                    "<h3 class=\"font-display text-xl font-semibold text-teal-800 mb-2\">" + item.title + "</h3>" +
+                    "<p class=\"text-2xl font-bold text-gray-800 mb-1\">" + item.content + "</p>" +
+                    "<p class=\"text-sm text-gray-600\">" + item.subtext + "</p>" +
+                "</div>"
+            ).join("");
+        }
+
+        function renderAsoebiCards(items) {
+            return items.map(item => 
+                "<div class=\"bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300\">" +
+                    "<div class=\"relative overflow-hidden\">" +
+                        "<img src=\"" + item.image + "\" alt=\"" + item.alt + "\" class=\"w-full h-80 object-cover transform hover:scale-110 transition duration-500\" loading=\"lazy\">" +
+                        "<div class=\"absolute top-4 right-4 bg-teal-600 text-white px-4 py-2 rounded-full font-semibold\">$40</div>" +
+                    "</div>" +
+                    "<div class=\"p-6\">" +
+                        "<h3 class=\"font-display text-xl font-semibold text-teal-800 mb-2\">" + item.category + "</h3>" +
+                        "<p class=\"text-gray-600 mb-4\">" + item.description + "</p>" +
+                        "<button class=\"w-full bg-teal-100 text-teal-800 py-2 rounded-lg font-medium hover:bg-teal-200 transition\">Select This Style</button>" +
+                    "</div>" +
+                "</div>"
+            ).join("");
+        }
+
+        function renderShippingTimeline(items) {
+            return items.map(item => 
+                "<div class=\"flex items-start\">" +
+                    "<div class=\"bg-yellow-400 text-teal-900 rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0\">" + item.step + "</div>" +
+                    "<div>" +
+                        "<h4 class=\"font-semibold text-lg mb-1\">" + item.title + "</h4>" +
+                        "<p class=\"text-teal-100 text-sm\">" + item.description + "</p>" +
+                    "</div>" +
+                "</div>"
+            ).join("");
+        }
+
+        function renderPaymentMethods(items) {
+            return items.map(item => 
+                "<div class=\"bg-white rounded-xl p-8 shadow-lg text-center\">" +
+                    "<div class=\"" + item.color + " text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4\">" +
+                        "<i class=\"" + item.icon + " text-3xl\"></i>" +
+                    "</div>" +
+                    "<h3 class=\"font-display text-2xl font-bold text-gray-800 mb-2\">" + item.name + "</h3>" +
+                    "<p class=\"text-gray-600 mb-4\">" + item.description + "</p>" +
+                    "<div class=\"bg-gray-100 rounded-lg p-4 mb-4\">" +
+                        "<p class=\"text-sm text-gray-500 mb-1\">Payment Handle</p>" +
+                        "<p class=\"font-mono font-semibold text-lg\">" + item.handle + "</p>" +
+                    "</div>" +
+                    "<div class=\"border-2 border-dashed border-gray-300 rounded-lg p-8 bg-gray-50\">" +
+                        "<i class=\"fas fa-qrcode text-4xl text-gray-400 mb-2\"></i>" +
+                        "<p class=\"text-sm text-gray-500\">Scan to Pay</p>" +
+                    "</div>" +
+                "</div>"
+            ).join("");
+        }
+
+        function renderFooterContact(items) {
+            return items.map(item => 
+                "<li class=\"flex items-center\"><i class=\"" + item.icon + " w-6 text-teal-400\"></i><span>" + item.text + "</span></li>"
+            ).join("");
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item => 
+                "<li><a href=\"" + item.href + "\" class=\"hover:text-white transition\">" + item.label + "</a></li>"
+            ).join("");
+        }
+
+        // Initialize Content
+        document.getElementById("nav-items").innerHTML = renderNavItems(navigationData);
+        document.getElementById("mobile-nav-items").innerHTML = renderNavItems(navigationData);
+        document.getElementById("event-details-grid").innerHTML = renderEventDetails(eventDetailsData);
+        document.getElementById("asoebi-grid").innerHTML = renderAsoebiCards(asoebiData);
+        document.getElementById("shipping-timeline").innerHTML = renderShippingTimeline(shippingTimelineData);
+        document.getElementById("payment-methods").innerHTML = renderPaymentMethods(paymentMethodsData);
+        document.getElementById("footer-contact").innerHTML = renderFooterContact(footerContactData);
+        document.getElementById("footer-links").innerHTML = renderFooterLinks(navigationData);
+
+        // Mobile Menu Toggle
+        document.getElementById("mobile-menu-btn").addEventListener("click", function() {
+            const mobileNav = document.getElementById("mobile-nav-items");
+            mobileNav.classList.toggle("hidden");
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.addEventListener("click", function(event) {
+            const link = event.target.closest("a[href^='#']");
+            if (!link) return;
+            event.preventDefault();
+            const targetId = link.getAttribute("href");
+            const target = document.querySelector(targetId);
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+                // Close mobile menu if open
+                document.getElementById("mobile-nav-items").classList.add("hidden");
+            }
+        });
+
+        // Form Handling
+        const form = document.getElementById("rsvp-form");
+        const shippingRadios = document.querySelectorAll("input[name='shipping']");
+        const addressField = document.getElementById("address-field");
+        const sizeField = document.getElementById("size-field");
+
+        shippingRadios.forEach(radio => {
+            radio.addEventListener("change", function() {
+                if (this.value === "yes") {
+                    addressField.classList.remove("hidden");
+                    sizeField.classList.remove("hidden");
+                } else {
+                    addressField.classList.add("hidden");
+                    sizeField.classList.add("hidden");
+                }
+            });
+        });
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your RSVP! You will receive a confirmation email shortly.");
+            form.reset();
+            addressField.classList.add("hidden");
+            sizeField.classList.add("hidden");
+        });
+
+        // Add scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to sections
+        document.querySelectorAll("section").forEach(section => {
+            section.style.opacity = "0";
+            section.style.transform = "translateY(20px)";
+            section.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
